@@ -1,9 +1,8 @@
 import React, {Component} from "react";
 import tether from '../tether.png'
-import Airdrop from "./Airdrop";
+import Airdrop from "./Airdrop.js";
 class Main extends Component { 
     render(){
-        console.log(this.props.tetherBalance)
         return (
             <div id='content' className="mt-3">
                 <table className="table text-muted text-center"> 
@@ -68,6 +67,7 @@ class Main extends Component {
                 <div className="card-body text-center" style= {{color:'blue'}}>
                     AIRDROP <Airdrop 
                     rwdBal = {this.props.rwdBalance}
+                    stakingBalance = {this.props.stakingBalance}
                     issueRWDTokens = {this.props.issueRWDTokens}
                     unstakeTokens = {this.props.unstakeTokens}
                     /> 
